@@ -1,22 +1,2 @@
-import mongoose from "mongoose";
-c
-  { timestamps: true }
-);
-
-const movieSchema = new mongoose.Schema(
-  {
-    name: { type: String, required: true },
-    image: { type: String },
-    year: { type: Number, required: true },
-    genre: { type: ObjectId, ref: "Genre", required: true },
-    detail: { type: String, required: true },
-    cast: [{ type: String }],
-    reviews: [reviewSchema],
-    numReviews: { type: Number, required: true, default: 0 },
-    createdAt: { type: Date, default: Date.now },
-  },
-  { timestamps: true }
-);
-
-const Movie = mongoose.model("Movie", movieSchema);
+e", movieSchema);
 export default Movie;
